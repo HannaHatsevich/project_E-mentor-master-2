@@ -1,0 +1,90 @@
+@import '../vars/vars.scss';
+
+@mixin fc() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    background-color: $wt;
+    font-family: $f;
+
+}
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $gr;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-family: $f;
+}
+a {
+    text-decoration: none;
+}
+.logo {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 120%;
+    @media (max-width:1070px) {
+        font-size: 40px;
+        line-height: 110%;
+    }
+    @media (max-width:430px) {
+        font-size: 32px;
+    }
+}
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #353A5A;
+    @media (max-width:430px) {
+        font-size: 14px;
+    }
+}
+.btn {
+    width: 230px;
+    height: 56px;
+    background: $or;
+    border-radius: 0px 20px;
+    border: none;
+    color: $wt;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+.main__benefitc-item {
+    max-width: 270px;
+    @include fc;
+    flex-direction: column;
+    .main__benefitc-number {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 58px;
+        line-height: 100%;
+        color: $gr;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        @media(max-width:1070px) {
+            font-size: 40px;
+        }
+    }
+    .main__benefitc-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+        color: $bl;
+    }
+}
+
