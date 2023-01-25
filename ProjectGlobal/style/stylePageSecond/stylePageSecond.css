@@ -410,50 +410,30 @@ a {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media (max-width: 620px) {
+  .main__about {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 0;
+  }
+}
 .main__about .main__about-item {
   max-width: 370px;
   height: auto;
   font-family: "Raleway", sans-serif;
+  margin-right: 15px;
+}
+.main__about .main__about-item :last-child {
+  margin-right: 0;
 }
 @media (max-width: 1160px) {
   .main__about .main__about-item {
     max-width: 300px;
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 620px) {
   .main__about .main__about-item {
-    max-width: 250px;
-    font-size: 12px;
-  }
-}
-@media (max-width: 830px) {
-  .main__about .main__about-item {
-    max-width: 220px;
-  }
-}
-@media (max-width: 730px) {
-  .main__about .main__about-item {
-    max-width: 220px;
-  }
-}
-@media (max-width: 720px) {
-  .main__about .main__about-item {
-    max-width: 200px;
-  }
-}
-@media (max-width: 660px) {
-  .main__about .main__about-item {
-    max-width: 180px;
-  }
-}
-@media (max-width: 600px) {
-  .main__about .main__about-item {
-    max-width: 150px;
-  }
-}
-@media (max-width: 520px) {
-  .main__about .main__about-item {
-    display: none;
+    margin-bottom: 15px;
   }
 }
 
